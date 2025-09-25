@@ -1,5 +1,6 @@
 import { Github, Heart, Linkedin, Mail, Phone, Twitter } from 'lucide-react'
 
+import { Logo } from '@/components/ui/Logo'
 import React from 'react'
 import { motion } from 'framer-motion'
 
@@ -39,8 +40,10 @@ export const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">DM</span>
+              <div className="h-8 w-8 rounded-full overflow-hidden flex items-center justify-center">
+                <Logo
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">DevMantse</h3>

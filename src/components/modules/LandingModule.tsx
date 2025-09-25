@@ -2,6 +2,7 @@ import { ArrowRight, Code, Globe, Palette, Smartphone } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/ui/Logo'
 import { motion } from 'framer-motion'
 import { useNavigationStore } from '@/stores/navigationStore'
 
@@ -71,8 +72,10 @@ export const LandingModule: React.FC = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="h-32 w-32 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-primary-foreground text-4xl font-bold shadow-2xl">
-                NL
+              <div className="h-32 w-32 rounded-full overflow-hidden bg-gradient-to-r from-primary to-accent flex items-center justify-center shadow-2xl">
+                <Logo
+                  className="h-full w-full object-contain p-2"
+                />
               </div>
               <div className="absolute -bottom-2 -right-2 h-8 w-8 bg-accent rounded-full border-4 border-background flex items-center justify-center">
                 <div className="h-3 w-3 bg-primary rounded-full animate-pulse"></div>

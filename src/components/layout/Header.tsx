@@ -12,6 +12,7 @@ import {
   Mail
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/ui/Logo'
 import { useThemeStore } from '@/stores/themeStore'
 import { useNavigationStore, type Module } from '@/stores/navigationStore'
 import { useUserStore } from '@/stores/userStore'
@@ -48,13 +49,13 @@ export const Header: React.FC = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">DM</span>
+            <div className="h-28 w-36  overflow-hidden flex items-center justify-center">
+              <Logo />
             </div>
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <h1 className="text-xl font-bold">DevMantse</h1>
-              <p className="text-xs text-muted-foreground">Portfolio Dashboard</p>
-            </div>
+
+            </div> */}
           </div>
         </div>
 
