@@ -1,9 +1,10 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+
+import { Button } from '@/components/ui/button'
+import { ExternalLink } from 'lucide-react'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { ExternalLink, Github, Play, FileText } from 'lucide-react'
 import { projects } from '@/data/projects'
 
 export const ProjectsModule: React.FC = () => {
@@ -23,11 +24,10 @@ export const ProjectsModule: React.FC = () => {
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="all">All Projects</TabsTrigger>
             <TabsTrigger value="web">Web Apps</TabsTrigger>
             <TabsTrigger value="mobile">Mobile</TabsTrigger>
-            <TabsTrigger value="ai">AI/ML</TabsTrigger>
           </TabsList>
 
           <TabsContent value="all" className="space-y-6">
@@ -41,10 +41,12 @@ export const ProjectsModule: React.FC = () => {
                 >
                   <Card className="group hover:shadow-lg transition-all duration-300">
                     <CardHeader>
-                      <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">
-                          {project.title}
-                        </span>
+                      <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <CardTitle className="group-hover:text-primary transition-colors">
                         {project.title}
@@ -72,15 +74,14 @@ export const ProjectsModule: React.FC = () => {
 
                       <div className="flex space-x-2">
                         {project.liveUrl && (
-                          <Button size="sm" variant="outline" className="flex-1">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="w-full"
+                            onClick={() => window.open(project.liveUrl, '_blank', 'noopener,noreferrer')}
+                          >
                             <ExternalLink className="h-4 w-4 mr-2" />
-                            Live Demo
-                          </Button>
-                        )}
-                        {project.githubUrl && (
-                          <Button size="sm" variant="outline" className="flex-1">
-                            <Github className="h-4 w-4 mr-2" />
-                            Code
+                            Live Preview
                           </Button>
                         )}
                       </div>
@@ -102,10 +103,12 @@ export const ProjectsModule: React.FC = () => {
                 >
                   <Card className="group hover:shadow-lg transition-all duration-300">
                     <CardHeader>
-                      <div className="aspect-video bg-gradient-to-br from-green-500 to-blue-600 rounded-lg mb-4 flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">
-                          {project.title}
-                        </span>
+                      <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <CardTitle className="group-hover:text-primary transition-colors">
                         {project.title}
@@ -128,15 +131,14 @@ export const ProjectsModule: React.FC = () => {
 
                       <div className="flex space-x-2">
                         {project.liveUrl && (
-                          <Button size="sm" variant="outline" className="flex-1">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="w-full"
+                            onClick={() => window.open(project.liveUrl, '_blank', 'noopener,noreferrer')}
+                          >
                             <ExternalLink className="h-4 w-4 mr-2" />
-                            Live Demo
-                          </Button>
-                        )}
-                        {project.githubUrl && (
-                          <Button size="sm" variant="outline" className="flex-1">
-                            <Github className="h-4 w-4 mr-2" />
-                            Code
+                            Live Preview
                           </Button>
                         )}
                       </div>
@@ -148,14 +150,59 @@ export const ProjectsModule: React.FC = () => {
           </TabsContent>
 
           <TabsContent value="mobile">
-            <div className="text-center py-12">
-              <p className="text-muted-foreground">Mobile projects coming soon...</p>
-            </div>
-          </TabsContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.filter(p => p.category === 'mobile').map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <Card className="group hover:shadow-lg transition-all duration-300">
+                    <CardHeader>
+                      <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <CardTitle className="group-hover:text-primary transition-colors">
+                        {project.title}
+                      </CardTitle>
+                      <CardDescription>
+                        {project.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.slice(0, 3).map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
 
-          <TabsContent value="ai">
-            <div className="text-center py-12">
-              <p className="text-muted-foreground">AI/ML projects coming soon...</p>
+                      <div className="flex space-x-2">
+                        {project.liveUrl && (
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="w-full"
+                            onClick={() => window.open(project.liveUrl, '_blank', 'noopener,noreferrer')}
+                          >
+                            <ExternalLink className="h-4 w-4 mr-2" />
+                            Live Preview
+                          </Button>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
             </div>
           </TabsContent>
         </Tabs>

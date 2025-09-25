@@ -5,7 +5,7 @@ export interface Project {
   longDescription: string
   image: string
   technologies: string[]
-  category: 'web' | 'mobile' | 'desktop' | 'ai' | 'other'
+  category: 'web' | 'mobile' | 'desktop' | 'other'
   status: 'completed' | 'in-progress' | 'planned'
   githubUrl?: string
   liveUrl?: string

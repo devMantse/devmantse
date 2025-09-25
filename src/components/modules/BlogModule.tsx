@@ -1,12 +1,20 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import { ArrowRight, Calendar, Clock } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+
 import { Badge } from '@/components/ui/badge'
-import { Calendar, Clock, ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import React from 'react'
 import { blogPosts } from '@/data/blog'
+import { motion } from 'framer-motion'
+import { useNavigationStore } from '@/stores/navigationStore'
 
 export const BlogModule: React.FC = () => {
+  const { setCurrentModule } = useNavigationStore()
+
+  const handleReadPost = (postId: string) => {
+    setCurrentModule('blog-detail', postId)
+  }
+
   return (
     <div className="container mx-auto p-6 space-y-6">
       <motion.div
@@ -53,7 +61,10 @@ export const BlogModule: React.FC = () => {
                     <span>{blogPosts[0]?.readTime || 8} min read</span>
                   </div>
                 </div>
-                <Button className="w-full">
+                <Button
+                  className="w-full"
+                  onClick={() => handleReadPost(blogPosts[0]?.id || '1')}
+                >
                   Read Full Article
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
@@ -76,7 +87,10 @@ export const BlogModule: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
               >
-                <Card className="hover:shadow-md transition-shadow cursor-pointer">
+                <Card
+                  className="hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={() => handleReadPost(post.id)}
+                >
                   <CardHeader className="pb-3">
                     <div className="flex flex-wrap gap-1 mb-2">
                       {post.tags.slice(0, 2).map((tag) => (
@@ -147,7 +161,12 @@ export const BlogModule: React.FC = () => {
                         <span>{post.readTime} min</span>
                       </div>
                     </div>
-                    <Button variant="outline" size="sm" className="w-full">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full"
+                      onClick={() => handleReadPost(post.id)}
+                    >
                       Read More
                     </Button>
                   </CardContent>

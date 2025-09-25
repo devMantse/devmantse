@@ -81,7 +81,7 @@ Future enhancements will include:
 - Progressive Web App capabilities
 
 This project demonstrates not just technical skills, but the ability to think about user experience and create something that truly stands out in the developer community.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Dec 15, 2024',
     updatedAt: 'Dec 15, 2024',
     tags: ['React', 'TypeScript', 'Portfolio', 'Web Development', 'UI/UX'],
@@ -136,7 +136,7 @@ const memoizedCallback = useCallback(() => {
 ## Best Practices and Common Pitfalls
 
 Learn when to use each technique and avoid common performance anti-patterns.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Dec 10, 2024',
     updatedAt: 'Dec 10, 2024',
     tags: ['React', 'Performance', 'JavaScript', 'Optimization'],
@@ -167,7 +167,7 @@ Comprehensive error handling strategies that provide meaningful feedback while m
 ## Testing
 
 Unit and integration testing strategies for API endpoints.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Dec 05, 2024',
     updatedAt: 'Dec 05, 2024',
     tags: ['Node.js', 'Express', 'API', 'Backend', 'JavaScript'],
@@ -198,7 +198,7 @@ The shift towards edge computing is changing how we think about application arch
 ## New Frameworks and Tools
 
 Emerging frameworks and tools that are gaining traction in the developer community.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Nov 28, 2024',
     updatedAt: 'Nov 28, 2024',
     tags: ['Web Development', 'Trends', 'AI', 'Technology', 'Future'],
@@ -228,7 +228,7 @@ Template literal types provide powerful string manipulation capabilities.
 ## Real-World Patterns
 
 Practical patterns and techniques used in production applications.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Nov 20, 2024',
     updatedAt: 'Nov 20, 2024',
     tags: ['TypeScript', 'JavaScript', 'Programming', 'Types'],
@@ -259,7 +259,7 @@ Building responsive layouts that work across all devices.
 ## Advanced Techniques
 
 Custom configurations, plugins, and advanced styling patterns.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Nov 15, 2024',
     updatedAt: 'Nov 15, 2024',
     tags: ['CSS', 'Tailwind', 'UI/UX', 'Design', 'Frontend'],
@@ -290,7 +290,7 @@ Benchmarking both solutions across different scenarios.
 ## When to Use Each
 
 Guidelines for choosing between Redux and Zustand based on your project needs.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Nov 10, 2024',
     updatedAt: 'Nov 10, 2024',
     tags: ['React', 'State Management', 'Redux', 'Zustand', 'JavaScript'],
@@ -325,7 +325,7 @@ Techniques for making your PWA fast and responsive.
 ## Testing and Deployment
 
 Best practices for testing and deploying Progressive Web Apps.`,
-    author: 'Wigal Lomotey',
+    author: 'Nii Lomotey',
     publishedAt: 'Nov 05, 2024',
     updatedAt: 'Nov 05, 2024',
     tags: ['PWA', 'Web Development', 'Service Workers', 'Performance', 'Mobile'],

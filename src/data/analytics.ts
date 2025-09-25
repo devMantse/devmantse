@@ -6,7 +6,7 @@ export const skills: Skill[] = [
     level: 95,
     category: 'frontend',
     yearsOfExperience: 4,
-    lastUsed: '2024-12-15',
+    lastUsed: '2025-01-15',
     certifications: ['React Developer Certification']
   },
   {
@@ -14,15 +14,23 @@ export const skills: Skill[] = [
     level: 90,
     category: 'frontend',
     yearsOfExperience: 3,
-    lastUsed: '2024-12-15',
+    lastUsed: '2025-01-15',
     certifications: ['TypeScript Fundamentals']
+  },
+  {
+    name: 'Tailwind CSS',
+    level: 85,
+    category: 'frontend',
+    yearsOfExperience: 3,
+    lastUsed: '2025-01-15',
+    certifications: []
   },
   {
     name: 'Node.js',
     level: 85,
     category: 'backend',
     yearsOfExperience: 3,
-    lastUsed: '2024-12-10',
+    lastUsed: '2025-01-10',
     certifications: ['Node.js Developer Certification']
   },
   {
@@ -30,7 +38,7 @@ export const skills: Skill[] = [
     level: 80,
     category: 'backend',
     yearsOfExperience: 2,
-    lastUsed: '2024-12-05',
+    lastUsed: '2025-01-05',
     certifications: ['Python for Data Science']
   },
   {
@@ -38,7 +46,7 @@ export const skills: Skill[] = [
     level: 75,
     category: 'backend',
     yearsOfExperience: 2,
-    lastUsed: '2024-12-08',
+    lastUsed: '2025-01-08',
     certifications: []
   },
   {
@@ -46,7 +54,7 @@ export const skills: Skill[] = [
     level: 70,
     category: 'backend',
     yearsOfExperience: 1,
-    lastUsed: '2024-11-20',
+    lastUsed: '2024-12-20',
     certifications: []
   },
   {
@@ -54,7 +62,7 @@ export const skills: Skill[] = [
     level: 65,
     category: 'devops',
     yearsOfExperience: 1,
-    lastUsed: '2024-11-15',
+    lastUsed: '2024-12-15',
     certifications: ['AWS Cloud Practitioner']
   },
   {
@@ -62,7 +70,7 @@ export const skills: Skill[] = [
     level: 60,
     category: 'devops',
     yearsOfExperience: 1,
-    lastUsed: '2024-11-10',
+    lastUsed: '2024-12-10',
     certifications: []
   },
   {
@@ -70,7 +78,7 @@ export const skills: Skill[] = [
     level: 70,
     category: 'design',
     yearsOfExperience: 2,
-    lastUsed: '2024-12-01',
+    lastUsed: '2025-01-01',
     certifications: []
   },
   {
@@ -78,7 +86,39 @@ export const skills: Skill[] = [
     level: 60,
     category: 'mobile',
     yearsOfExperience: 1,
-    lastUsed: '2024-10-15',
+    lastUsed: '2025-01-15',
+    certifications: []
+  },
+  {
+    name: 'Flutter',
+    level: 55,
+    category: 'mobile',
+    yearsOfExperience: 1,
+    lastUsed: '2025-01-15',
+    certifications: []
+  },
+  {
+    name: 'WordPress',
+    level: 70,
+    category: 'frontend',
+    yearsOfExperience: 2,
+    lastUsed: '2025-01-10',
+    certifications: []
+  },
+  {
+    name: 'Shopify',
+    level: 65,
+    category: 'frontend',
+    yearsOfExperience: 1,
+    lastUsed: '2025-01-12',
+    certifications: []
+  },
+  {
+    name: 'Wix',
+    level: 60,
+    category: 'frontend',
+    yearsOfExperience: 1,
+    lastUsed: '2025-01-08',
     certifications: []
   }
 ]

@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { CheckCircle, Mail, MapPin, Phone, Send } from 'lucide-react'
+import React, { useState } from 'react'
+
 import { Badge } from '@/components/ui/badge'
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, CheckCircle } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
 
 export const ContactModule: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -44,43 +45,23 @@ export const ContactModule: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@devmantse.com',
-      href: 'mailto:hello@devmantse.com'
+      value: 'devmantse@gmail.com',
+      href: 'mailto:devmantse@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+233 54 270 9410',
+      href: 'tel:+233542709410'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Ghana',
       href: '#'
     }
   ]
 
-  const socialLinks = [
-    {
-      icon: Github,
-      label: 'GitHub',
-      href: 'https://github.com/devmantse',
-      color: 'hover:text-gray-900 dark:hover:text-gray-100'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/in/devmantse',
-      color: 'hover:text-blue-600'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/devmantse',
-      color: 'hover:text-blue-400'
-    }
-  ]
 
   return (
     <div className="container mx-auto p-6 space-y-6">
@@ -272,38 +253,6 @@ export const ContactModule: React.FC = () => {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Follow Me</CardTitle>
-                <CardDescription>
-                  Connect on social media
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex space-x-4">
-                  {socialLinks.map((social, index) => {
-                    const Icon = social.icon
-                    return (
-                      <motion.a
-                        key={social.label}
-                        href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                        className={`p-3 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all ${social.color}`}
-                      >
-                        <Icon className="h-5 w-5" />
-                        <span className="sr-only">{social.label}</span>
-                      </motion.a>
-                    )
-                  })}
-                </div>
-              </CardContent>
-            </Card>
 
             <Card>
               <CardHeader>
