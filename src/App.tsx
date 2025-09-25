@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 import { AnalyticsModule } from '@/components/modules/AnalyticsModule'
 import { BlogDetailModule } from '@/components/modules/BlogDetailModule'

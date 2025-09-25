@@ -16,7 +16,7 @@ interface UserState {
 
 export const useUserStore = create<UserState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       isGuest: true,
       sessionStartTime: new Date(),
       visitedModules: [],

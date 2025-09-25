@@ -14,7 +14,7 @@ export const useNavigationStore = create<NavigationState>((set) => ({
   currentModule: 'landing',
   breadcrumbs: ['Home'],
   blogPostId: undefined,
-  setCurrentModule: (currentModule, blogPostId) => set((state) => ({
+  setCurrentModule: (currentModule, blogPostId) => set(() => ({
     currentModule,
     blogPostId,
     breadcrumbs: currentModule === 'landing'
