@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { useEffect } from 'react'
 
 import { AnalyticsModule } from '@/components/modules/AnalyticsModule'
 import { BlogDetailModule } from '@/components/modules/BlogDetailModule'
@@ -10,18 +9,9 @@ import { Header } from '@/components/layout/Header'
 import { LandingModule } from '@/components/modules/LandingModule'
 import { PlaygroundModule } from '@/components/modules/PlaygroundModule'
 import { ProjectsModule } from '@/components/modules/ProjectsModule'
+import { useEffect } from 'react'
 import { useNavigationStore } from '@/stores/navigationStore'
 import { useThemeStore } from '@/stores/themeStore'
-
-const moduleComponents = {
-  landing: LandingModule,
-  projects: ProjectsModule,
-  analytics: AnalyticsModule,
-  blog: BlogModule,
-  'blog-detail': BlogDetailModule,
-  // playground: PlaygroundModule,
-  contact: ContactModule,
-}
 
 export default function App() {
   const { currentModule, blogPostId } = useNavigationStore()
@@ -45,7 +35,26 @@ export default function App() {
     }
   }, [theme])
 
-  const CurrentModule = moduleComponents[currentModule]
+  const renderModule = () => {
+    switch (currentModule) {
+      case 'landing':
+        return <LandingModule />
+      case 'projects':
+        return <ProjectsModule />
+      case 'analytics':
+        return <AnalyticsModule />
+      case 'blog':
+        return <BlogModule />
+      case 'blog-detail':
+        return blogPostId ? <BlogDetailModule postId={blogPostId} /> : <BlogModule />
+      case 'playground':
+        return <PlaygroundModule />
+      case 'contact':
+        return <ContactModule />
+      default:
+        return <LandingModule />
+    }
+  }
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -61,11 +70,7 @@ export default function App() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="h-[calc(100vh-4rem)] overflow-auto"
           >
-            {currentModule === 'blog-detail' && blogPostId ? (
-              <CurrentModule postId={blogPostId} />
-            ) : (
-              <CurrentModule />
-            )}
+            {renderModule()}
           </motion.div>
         </AnimatePresence>
       </main>
