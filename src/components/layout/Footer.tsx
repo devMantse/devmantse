@@ -1,4 +1,4 @@
-import { Github, Heart, Linkedin, Mail, Phone, Twitter } from 'lucide-react'
+import { Github, Heart, Mail, Phone } from 'lucide-react'
 
 import { Logo } from '@/components/ui/Logo'
 import React from 'react'
@@ -13,18 +13,6 @@ export const Footer: React.FC = () => {
       label: 'GitHub',
       href: 'https://github.com/devmantse',
       color: 'hover:text-primary'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/in/devmantse',
-      color: 'hover:text-accent'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/devmantse',
-      color: 'hover:text-accent'
     }
   ]
 
