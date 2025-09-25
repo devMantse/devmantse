@@ -1,0 +1,163 @@
+---
+title: "DevMantse Portfolio - Dashboard-Style Web Application"
+description: "A modern portfolio website that functions as a SaaS-style dashboard application demonstrating advanced UI/UX skills, component architecture, and interactive design"
+version: "1.0"
+author: "Wigal Lomotey"
+created: "2024"install
+status: "Planning"
+---
+
+# DevMantse Portfolio - Dashboard-Style Web Application
+
+## 🎯 Project Overview
+
+Create a modern portfolio website that functions as a **SaaS-style dashboard application** rather than a traditional scrolling portfolio. The goal is to demonstrate advanced UI/UX skills, component architecture, and interactive design through a fully navigable web app experience.
+
+### Core Concept
+- **Dashboard Navigation**: Instead of scrolling through sections, visitors navigate modules (Projects, Blog, Contact, Playground) as if they were separate applications
+- **Interactive Experience**: Showcase ability to design usable interfaces, data-driven layouts, and modular systems
+- **Professional Demonstration**: Prove competency in modern web development practices and user experience design
+
+
+
+## 🏗️ Technical Architecture
+
+### Core Stack
+- **Framework**: React (App Router)
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **State Management**: Zustand for global state
+- **Animations**: Framer Motion for page transitions and micro-interactions
+- **Data Visualization**: Chart.js or Recharts for analytics dashboard
+- **Icons**: Lucide React
+- **Type Safety**: TypeScript throughout
+
+
+### Performance Requirements
+- **Lighthouse Score**: 90+ across all metrics
+- **Core Web Vitals**: All metrics in "Good" range
+- **Loading Time**: < 2 seconds initial load
+- **Bundle Size**: < 500KB initial JavaScript bundle
+
+## 🧩 Application Structure & Features
+
+### 1. Dashboard Layout
+**Top Navigation with App-Style Modules:**
+- 🗂 **Projects** - Portfolio showcase with detailed case studies
+- 📊 **Analytics** - Skills visualization with interactive charts
+- 📝 **Blog/Case Studies** - Technical writing and project deep-dives
+- 🎨 **Playground** - Interactive demos and experiments
+- 📬 **Contact** - Professional contact form with real-time features
+
+### 2. Projects as Mini-Applications
+Each project functions as a standalone app with:
+- **Live Preview**: Embedded iframe with theme toggling (light/dark)
+- **Details Tab**: Problem statement, role, tech stack, results, metrics
+- **Code Tab**: GitHub integration with syntax-highlighted code snippets
+- **Demo Tab**: Full-screen modal or inline project execution
+- **Case Study Tab**: Detailed walkthrough of development process
+
+### 3. Interactive Widgets & Components
+- **Skill Meter**: Fitness tracker-style progress bars for technical skills
+- **Activity Feed**: Real-time GitHub activity and blog post updates
+- **Notification Bell**: Easter egg feature showing new updates and achievements
+- **Theme Customizer**: Live preview of color palette and typography changes
+- **Settings Panel**: Comprehensive customization options
+
+### 4. Personalization & Play Features
+- **Theme System**: Multiple color palettes (Default Blue, Purple, Green, Orange)
+- **Typography Controls**: Font size options (Compact, Default, Comfortable)
+- **Accessibility**: Reduced motion toggle and high contrast mode
+- **Easter Eggs**: Konami code unlocks hidden "secret project"
+- **Interactive Demos**: Live coding examples and component playgrounds
+
+## 🎨 Design System & UI Requirements
+
+### Theme System Implementation
+- **Dark/Light Mode**: Smooth transitions with system preference detection
+- **Color Palette Customization**: 4 preset themes with live preview
+- **Typography Scale**: Responsive font sizing with accessibility considerations
+- **Component Library**: Consistent shadcn/ui components with custom theming
+- **State Persistence**: User preferences stored in localStorage via Zustand
+
+### Animation Strategy
+- **Page Transitions**: Slide animations between modules using Framer Motion
+- **Micro-interactions**: Hover states, button clicks, loading states
+- **Data Visualization**: Chart entrance animations and interactive elements
+- **Easter Egg Animations**: Surprise interactions and hidden features
+- **Performance Optimization**: Transform-based animations with will-change properties
+
+## 🚀 User Experience Flow
+
+### Landing Experience
+1. **Welcome Screen**: Animated login interface with "Continue as Guest" option
+2. **Dashboard Introduction**: Brief tour highlighting key features and navigation
+3. **Module Selection**: Clear visual hierarchy for accessing different sections
+
+### Navigation Flow
+1. **Projects Module**:
+   - Grid layout of project cards with hover previews
+   - Detailed project views with tabbed interface
+   - Live demo integration and GitHub links
+
+2. **Analytics Module**:
+   - Interactive skill charts and progress visualizations
+   - GitHub contribution graphs and activity metrics
+   - Technology usage statistics and learning progress
+
+3. **Playground Module**:
+   - Interactive component demos
+   - Theme customization live preview
+   - Code snippet examples with syntax highlighting
+
+4. **Contact Module**:
+   - Professional contact form with validation
+   - Real-time chat widget integration
+   - Social media links and professional profiles
+
+## 📋 Implementation Specifications
+
+### Component Architecture
+```
+src/
+├── components/
+│   ├── ui/ (shadcn components)
+│   ├── layout/ (Header, Sidebar, Footer)
+│   ├── modules/ (Projects, Analytics, Blog, Playground, Contact)
+│   └── widgets/ (SkillMeter, ActivityFeed, ThemeToggle)
+├── hooks/ (custom React hooks)
+├── stores/ (Zustand state management)
+├── lib/ (utilities and configurations)
+└── types/ (TypeScript definitions)
+```
+
+### State Management Structure
+- **Theme Store**: Color palette, typography, and accessibility preferences
+- **Navigation Store**: Current module, sidebar state, and breadcrumbs
+- **User Store**: Guest session data and interaction history
+- **Project Store**: Project data, filters, and selected project state
+
+### API Integration
+- **GitHub API**: Repository data, contribution graphs, and activity feeds
+- **Email Service**: Contact form submissions via Resend or similar
+- **Analytics**: User interaction tracking and performance metrics
+- **Content Management**: Blog posts and case studies via MDX
+
+## 🎯 Success Metrics
+
+### Technical Metrics
+- Lighthouse Performance Score: 90+
+- First Contentful Paint: < 1.5s
+- Time to Interactive: < 2.5s
+- Cumulative Layout Shift: < 0.1
+
+### User Experience Metrics
+- Average session duration: > 3 minutes
+- Module interaction rate: > 70%
+- Contact form completion rate: > 15%
+- Return visitor rate: > 25%
+
+### Professional Impact
+- Portfolio views from target audience
+- Direct contact inquiries
+- Positive feedback on technical implementation
+- Demonstration of modern web development practices
