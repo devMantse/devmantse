@@ -3,43 +3,44 @@ import { Project } from '@/types'
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Redde Online',
-    description: 'Secure payment collection platform for merchants in Ghana',
-    longDescription: 'Redde is a payment collection platform that allows merchants to receive payments for goods and services. Features include real-time transactional reports, intuitive dashboard, and seamless bank account integration.',
-    image: '/images/reddonline.png',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Payment Gateway', 'Tailwind CSS'],
+    title: 'Frog Platform',
+    description: 'Innovative web platform for digital services',
+    longDescription: 'Frog is a modern web platform that provides various digital services and solutions. The platform features a clean, intuitive interface designed for optimal user experience and functionality.',
+    image: '/images/frog.png',
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Modern UI', 'Responsive Design'],
     category: 'web',
     status: 'completed',
-    liveUrl: 'https://reddeonline.com',
+    liveUrl: 'http://frog.wigal.com.gh',
     metrics: {
-      users: 5000,
-      performance: '95% Lighthouse Score',
-      uptime: '99.9%',
-      satisfaction: 4.8
+      users: 900,
+      performance: '92% Lighthouse Score',
+      uptime: '99.7%',
+      satisfaction: 4.4
     },
     timeline: {
-      start: '2023-01-15',
-      end: '2023-06-20',
-      duration: '5 months'
+      start: '2023-04-01',
+      end: '2023-09-15',
+      duration: '5.5 months'
     },
     role: 'Full-Stack Developer',
-    team: ['Frontend Developer', 'Backend Developer', 'Payment Integration Specialist'],
+    team: ['UI/UX Designer', 'Frontend Developer'],
     challenges: [
-      'Implementing secure payment processing',
-      'Ensuring PCI-DSS compliance',
-      'Creating real-time transaction monitoring'
+      'Creating modern and intuitive interface',
+      'Implementing responsive design',
+      'Optimizing performance across devices'
     ],
     solutions: [
-      'Integrated multiple payment channels (Mobile Money, Cards, Bank Transfer)',
-      'Implemented ISO/IEC 27001:2022 security standards',
-      'Built real-time dashboard with WebSocket connections'
+      'Built modern React application with TypeScript',
+      'Implemented responsive design with mobile-first approach',
+      'Optimized performance with code splitting and lazy loading'
     ],
     results: [
-      'Achieved PCI-DSS compliance certification',
-      'Processed over 10,000 transactions monthly',
-      'Received 4.8/5 merchant satisfaction rating'
+      'Achieved 92% Lighthouse performance score',
+      'Improved user engagement by 40%',
+      'Received 4.4/5 user satisfaction rating'
     ]
   },
+
   {
     id: '2',
     title: 'Barbies Luxury',
@@ -393,41 +394,41 @@ export const projects: Project[] = [
   },
   {
     id: '11',
-    title: 'Frog Platform',
-    description: 'Innovative web platform for digital services',
-    longDescription: 'Frog is a modern web platform that provides various digital services and solutions. The platform features a clean, intuitive interface designed for optimal user experience and functionality.',
-    image: '/images/frog.png',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Modern UI', 'Responsive Design'],
+    title: 'Redde Online',
+    description: 'Secure payment collection platform for merchants in Ghana',
+    longDescription: 'Redde is a payment collection platform that allows merchants to receive payments for goods and services. Features include real-time transactional reports, intuitive dashboard, and seamless bank account integration.',
+    image: '/images/reddonline.png',
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Payment Gateway', 'Tailwind CSS'],
     category: 'web',
     status: 'completed',
-    liveUrl: 'http://frog.wigal.com.gh',
+    liveUrl: 'https://reddeonline.com',
     metrics: {
-      users: 900,
-      performance: '92% Lighthouse Score',
-      uptime: '99.7%',
-      satisfaction: 4.4
+      users: 5000,
+      performance: '95% Lighthouse Score',
+      uptime: '99.9%',
+      satisfaction: 4.8
     },
     timeline: {
-      start: '2023-04-01',
-      end: '2023-09-15',
-      duration: '5.5 months'
+      start: '2023-01-15',
+      end: '2023-06-20',
+      duration: '5 months'
     },
     role: 'Full-Stack Developer',
-    team: ['UI/UX Designer', 'Frontend Developer'],
+    team: ['Frontend Developer', 'Backend Developer', 'Payment Integration Specialist'],
     challenges: [
-      'Creating modern and intuitive interface',
-      'Implementing responsive design',
-      'Optimizing performance across devices'
+      'Implementing secure payment processing',
+      'Ensuring PCI-DSS compliance',
+      'Creating real-time transaction monitoring'
     ],
     solutions: [
-      'Built modern React application with TypeScript',
-      'Implemented responsive design with mobile-first approach',
-      'Optimized performance with code splitting and lazy loading'
+      'Integrated multiple payment channels (Mobile Money, Cards, Bank Transfer)',
+      'Implemented ISO/IEC 27001:2022 security standards',
+      'Built real-time dashboard with WebSocket connections'
     ],
     results: [
-      'Achieved 92% Lighthouse performance score',
-      'Improved user engagement by 40%',
-      'Received 4.4/5 user satisfaction rating'
+      'Achieved PCI-DSS compliance certification',
+      'Processed over 10,000 transactions monthly',
+      'Received 4.8/5 merchant satisfaction rating'
     ]
-  }
+  },
 ]
