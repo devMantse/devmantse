@@ -80,47 +80,9 @@ export const projects: Project[] = [
       'Received 4.6/5 customer satisfaction rating'
     ]
   },
+
   {
     id: '3',
-    title: 'Beacon Survey Limited',
-    description: 'Professional land surveying and geological engineering services',
-    longDescription: 'Beacon Survey Limited provides comprehensive land surveying, hydrographic surveys, drone mapping, and geological engineering services. Features include 3D laser scanning, topographic surveys, and construction equipment hire.',
-    image: '/images/beaconsurvey.png',
-    technologies: ['WordPress', 'PHP', 'MySQL', '3D Mapping', 'GIS', 'Drone Technology'],
-    category: 'web',
-    status: 'completed',
-    liveUrl: 'http://beaconsurveyghana.com.gh',
-    metrics: {
-      users: 800,
-      performance: '90% Lighthouse Score',
-      uptime: '99.7%',
-      satisfaction: 4.7
-    },
-    timeline: {
-      start: '2022-08-15',
-      end: '2023-02-28',
-      duration: '6.5 months'
-    },
-    role: 'Web Developer',
-    team: ['Content Manager', 'SEO Specialist'],
-    challenges: [
-      'Showcasing technical surveying services',
-      'Creating service portfolio presentation',
-      'Implementing contact and inquiry systems'
-    ],
-    solutions: [
-      'Built comprehensive service showcase with case studies',
-      'Implemented multi-channel contact system',
-      'Created responsive design for mobile accessibility'
-    ],
-    results: [
-      'Increased client inquiries by 150%',
-      'Improved service visibility in search results',
-      'Received 4.7/5 client satisfaction rating'
-    ]
-  },
-  {
-    id: '4',
     title: 'Giles Finance',
     description: 'Comprehensive financial services and corporate banking solutions',
     longDescription: 'Giles Finance provides a wide range of financial services including asset finance, bridging finance, buy-to-let mortgages, commercial mortgages, and corporate banking solutions for businesses and individuals.',
@@ -159,7 +121,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '5',
+    id: '4',
     title: 'Holding Her Space',
     description: 'Empowering women through community and support services',
     longDescription: 'Holding Her Space is a platform dedicated to empowering women through community support, resources, and services. The platform provides a safe space for women to connect, share experiences, and access support.',
@@ -198,7 +160,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '6',
+    id: '5',
     title: 'Kura App',
     description: 'Innovative mobile application for digital services',
     longDescription: 'Kura App is a comprehensive mobile application that provides various digital services and features. The app offers a seamless user experience with modern design and intuitive functionality.',
@@ -237,7 +199,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '7',
+    id: '6',
     title: 'Sykabank',
     description: 'Digital banking platform with comprehensive financial services',
     longDescription: 'Sykabank is a modern digital banking platform that provides comprehensive financial services including account management, money transfers, bill payments, and investment options with secure and user-friendly interface.',
@@ -276,7 +238,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '8',
+    id: '7',
     title: 'Temvo Web Platform',
     description: 'Smart ward wallet system for parents and educational institutions',
     longDescription: 'Temvo is a comprehensive smart ward wallet system that allows parents to manage their children\'s spending in educational institutions. Features include real-time balance monitoring, spending limits, and transaction history.',
@@ -315,7 +277,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '9',
+    id: '8',
     title: 'Temvo Mobile App',
     description: 'Mobile application for smart ward wallet management',
     longDescription: 'The Temvo mobile app provides parents with convenient access to their children\'s spending management system. Features include real-time balance monitoring, spending limit controls, and transaction history on mobile devices.',
@@ -354,7 +316,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '10',
+    id: '9',
     title: 'iCollate Mobile App',
     description: 'Data collection and management mobile application',
     longDescription: 'iCollate is a comprehensive mobile application for data collection and management. The app provides tools for field data collection, form management, and data synchronization with cloud services.',
@@ -393,7 +355,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '11',
+    id: '10',
     title: 'Redde Online',
     description: 'Secure payment collection platform for merchants in Ghana',
     longDescription: 'Redde is a payment collection platform that allows merchants to receive payments for goods and services. Features include real-time transactional reports, intuitive dashboard, and seamless bank account integration.',
@@ -429,6 +391,45 @@ export const projects: Project[] = [
       'Achieved PCI-DSS compliance certification',
       'Processed over 10,000 transactions monthly',
       'Received 4.8/5 merchant satisfaction rating'
+    ]
+  },
+  {
+    id: '11',
+    title: 'Beacon Survey Limited',
+    description: 'Professional land surveying and geological engineering services',
+    longDescription: 'Beacon Survey Limited provides comprehensive land surveying, hydrographic surveys, drone mapping, and geological engineering services. Features include 3D laser scanning, topographic surveys, and construction equipment hire.',
+    image: '/images/beaconsurvey.png',
+    technologies: ['WordPress', 'PHP', 'MySQL', '3D Mapping', 'GIS', 'Drone Technology'],
+    category: 'web',
+    status: 'completed',
+    liveUrl: 'http://beaconsurveyghana.com.gh',
+    metrics: {
+      users: 800,
+      performance: '90% Lighthouse Score',
+      uptime: '99.7%',
+      satisfaction: 4.7
+    },
+    timeline: {
+      start: '2022-08-15',
+      end: '2023-02-28',
+      duration: '6.5 months'
+    },
+    role: 'Web Developer',
+    team: ['Content Manager', 'SEO Specialist'],
+    challenges: [
+      'Showcasing technical surveying services',
+      'Creating service portfolio presentation',
+      'Implementing contact and inquiry systems'
+    ],
+    solutions: [
+      'Built comprehensive service showcase with case studies',
+      'Implemented multi-channel contact system',
+      'Created responsive design for mobile accessibility'
+    ],
+    results: [
+      'Increased client inquiries by 150%',
+      'Improved service visibility in search results',
+      'Received 4.7/5 client satisfaction rating'
     ]
   },
 ]
