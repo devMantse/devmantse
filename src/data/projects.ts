@@ -3,7 +3,7 @@ import { Project } from '@/types'
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Frog Platform',
+    title: 'FROG Bulk Messaging App',
     description: 'Innovative web platform for digital services',
     longDescription: 'Frog is a modern web platform that provides various digital services and solutions. The platform features a clean, intuitive interface designed for optimal user experience and functionality.',
     image: '/images/frog.png',
@@ -43,6 +43,86 @@ export const projects: Project[] = [
 
   {
     id: '2',
+    title: 'Temvo Web Platform',
+    description: 'Smart ward wallet system for parents and educational institutions',
+    longDescription: 'Temvo is a comprehensive smart ward wallet system that allows parents to manage their children\'s spending in educational institutions. Features include real-time balance monitoring, spending limits, and transaction history.',
+    image: '/images/Temvo-web.png',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'Real-time Updates', 'Mobile Integration', 'Payment Processing'],
+    category: 'web',
+    status: 'completed',
+    liveUrl: 'http://temvo.app',
+    metrics: {
+      users: 2500,
+      performance: '94% Lighthouse Score',
+      uptime: '99.9%',
+      satisfaction: 4.8
+    },
+    timeline: {
+      start: '2023-09-01',
+      end: '2024-02-28',
+      duration: '6 months'
+    },
+    role: 'Full-Stack Developer',
+    team: ['Mobile Developer', 'Payment Integration Specialist', 'UI/UX Designer'],
+    challenges: [
+      'Creating secure parent-child financial management',
+      'Implementing real-time balance updates',
+      'Building intuitive dashboard for parents'
+    ],
+    solutions: [
+      'Built secure multi-user system with role-based access',
+      'Implemented real-time WebSocket connections',
+      'Created comprehensive transaction monitoring system'
+    ],
+    results: [
+      'Served 2,500+ active users',
+      'Processed 15,000+ transactions monthly',
+      'Achieved 4.8/5 parent satisfaction rating'
+    ]
+  },
+
+  {
+    id: '3',
+    title: 'Temvo Mobile App',
+    description: 'Mobile application for smart ward wallet management',
+    longDescription: 'The Temvo mobile app provides parents with convenient access to their children\'s spending management system. Features include real-time balance monitoring, spending limit controls, and transaction history on mobile devices.',
+    image: '/images/TemvoMobile.jpeg',
+    technologies: ['React Native', 'Node.js', 'PostgreSQL', 'Push Notifications', 'Biometric Auth', 'Offline Support'],
+    category: 'mobile',
+    status: 'completed',
+    liveUrl: 'https://apps.apple.com/gh/app/temvo-app/id6748036316',
+    metrics: {
+      users: 1800,
+      performance: '4.8 App Store Rating',
+      uptime: '99.9%',
+      satisfaction: 4.8
+    },
+    timeline: {
+      start: '2023-10-01',
+      end: '2024-03-15',
+      duration: '5.5 months'
+    },
+    role: 'Mobile Developer',
+    team: ['Backend Developer', 'UI/UX Designer', 'QA Tester'],
+    challenges: [
+      'Creating secure mobile financial app',
+      'Implementing real-time notifications',
+      'Ensuring cross-platform compatibility'
+    ],
+    solutions: [
+      'Built secure mobile app with biometric authentication',
+      'Implemented real-time push notifications',
+      'Created seamless sync with web platform'
+    ],
+    results: [
+      'Achieved 4.8 App Store rating',
+      'Maintained 99.9% uptime',
+      'Received 4.8/5 user satisfaction rating'
+    ]
+  },
+
+  {
+    id: '4',
     title: 'Barbies Luxury',
     description: 'Premium fashion e-commerce platform for luxury clothing and accessories',
     longDescription: 'Barbies Luxury is a high-end fashion e-commerce platform offering premium dresses, matching sets, and accessories. Features include secure payments, express delivery, and customer service excellence.',
@@ -82,7 +162,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: '3',
+    id: '5',
     title: 'Giles Finance',
     description: 'Comprehensive financial services and corporate banking solutions',
     longDescription: 'Giles Finance provides a wide range of financial services including asset finance, bridging finance, buy-to-let mortgages, commercial mortgages, and corporate banking solutions for businesses and individuals.',
@@ -121,7 +201,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '4',
+    id: '6',
     title: 'Holding Her Space',
     description: 'Empowering women through community and support services',
     longDescription: 'Holding Her Space is a platform dedicated to empowering women through community support, resources, and services. The platform provides a safe space for women to connect, share experiences, and access support.',
@@ -160,7 +240,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '5',
+    id: '7',
     title: 'Kura App',
     description: 'Innovative mobile application for digital services',
     longDescription: 'Kura App is a comprehensive mobile application that provides various digital services and features. The app offers a seamless user experience with modern design and intuitive functionality.',
@@ -199,7 +279,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '6',
+    id: '8',
     title: 'Sykabank',
     description: 'Digital banking platform with comprehensive financial services',
     longDescription: 'Sykabank is a modern digital banking platform that provides comprehensive financial services including account management, money transfers, bill payments, and investment options with secure and user-friendly interface.',
@@ -235,84 +315,6 @@ export const projects: Project[] = [
       'Processed over 50,000 transactions monthly',
       'Achieved 99.95% uptime',
       'Maintained 4.6/5 customer satisfaction rating'
-    ]
-  },
-  {
-    id: '7',
-    title: 'Temvo Web Platform',
-    description: 'Smart ward wallet system for parents and educational institutions',
-    longDescription: 'Temvo is a comprehensive smart ward wallet system that allows parents to manage their children\'s spending in educational institutions. Features include real-time balance monitoring, spending limits, and transaction history.',
-    image: '/images/Temvo-web.png',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Real-time Updates', 'Mobile Integration', 'Payment Processing'],
-    category: 'web',
-    status: 'completed',
-    liveUrl: 'http://temvo.app',
-    metrics: {
-      users: 2500,
-      performance: '94% Lighthouse Score',
-      uptime: '99.9%',
-      satisfaction: 4.8
-    },
-    timeline: {
-      start: '2023-09-01',
-      end: '2024-02-28',
-      duration: '6 months'
-    },
-    role: 'Full-Stack Developer',
-    team: ['Mobile Developer', 'Payment Integration Specialist', 'UI/UX Designer'],
-    challenges: [
-      'Creating secure parent-child financial management',
-      'Implementing real-time balance updates',
-      'Building intuitive dashboard for parents'
-    ],
-    solutions: [
-      'Built secure multi-user system with role-based access',
-      'Implemented real-time WebSocket connections',
-      'Created comprehensive transaction monitoring system'
-    ],
-    results: [
-      'Served 2,500+ active users',
-      'Processed 15,000+ transactions monthly',
-      'Achieved 4.8/5 parent satisfaction rating'
-    ]
-  },
-  {
-    id: '8',
-    title: 'Temvo Mobile App',
-    description: 'Mobile application for smart ward wallet management',
-    longDescription: 'The Temvo mobile app provides parents with convenient access to their children\'s spending management system. Features include real-time balance monitoring, spending limit controls, and transaction history on mobile devices.',
-    image: '/images/TemvoMobile.jpeg',
-    technologies: ['React Native', 'Node.js', 'PostgreSQL', 'Push Notifications', 'Biometric Auth', 'Offline Support'],
-    category: 'mobile',
-    status: 'completed',
-    liveUrl: 'https://apps.apple.com/gh/app/temvo-app/id6748036316',
-    metrics: {
-      users: 1800,
-      performance: '4.8 App Store Rating',
-      uptime: '99.9%',
-      satisfaction: 4.8
-    },
-    timeline: {
-      start: '2023-10-01',
-      end: '2024-03-15',
-      duration: '5.5 months'
-    },
-    role: 'Mobile Developer',
-    team: ['Backend Developer', 'UI/UX Designer', 'QA Tester'],
-    challenges: [
-      'Creating secure mobile financial app',
-      'Implementing real-time notifications',
-      'Ensuring cross-platform compatibility'
-    ],
-    solutions: [
-      'Built secure mobile app with biometric authentication',
-      'Implemented real-time push notifications',
-      'Created seamless sync with web platform'
-    ],
-    results: [
-      'Achieved 4.8 App Store rating',
-      'Maintained 99.9% uptime',
-      'Received 4.8/5 user satisfaction rating'
     ]
   },
   {
